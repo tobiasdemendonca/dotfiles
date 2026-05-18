@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+# Install fish
+sudo apt install fish -y
+
+# Set fish as default shell
+chsh -s /usr/bin/fish

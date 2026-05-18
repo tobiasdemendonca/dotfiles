@@ -1,0 +1,10 @@
+# Machine-specific state files
+fish_variables
+
+# Backup files
+*.bak
+*~
+
+# Editor temporary files
+.*.swp
+.*.swo

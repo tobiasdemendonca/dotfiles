@@ -1,0 +1,4 @@
+[user]
+    email = work.email@gmail.com
+    name = Toby de Mendonça
+    signingkey = ~/.ssh/id_ed25519.pub

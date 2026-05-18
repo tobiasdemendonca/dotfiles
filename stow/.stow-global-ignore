@@ -1,0 +1,34 @@
+# Comments and blank lines are allowed.
+
+RCS
+.+,v
+
+CVS
+\.\#.+       # CVS conflict files / emacs lock files
+\.cvsignore
+
+\.svn
+_darcs
+\.hg
+
+\.git
+\.gitmodules
+
+.+~          # emacs backup files
+\#.*\#       # emacs autosave files
+
+^/README.*
+^/LICENSE.*
+^/COPYING
+
+# ignore all install scripts
+^install
+
+# Ignore backup files
+.*\.bak$
+
+# Ignore fish variables (local state)
+fish_variables
+
+# Btop
+btop.log

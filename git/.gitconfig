@@ -1,0 +1,45 @@
+[column]
+	ui = auto
+[branch]
+	sort = -committerdate
+[tag]
+	sort = version:refname
+[diff]
+	colorMoved = plain
+	renames = true
+	algorithm = histogram
+	# Show i/w/c for index/working directory/commit instead of a/b
+	mnemonicPrefix = true
+[init]
+	defaultBranch = main
+[credential]
+	helper = store
+[push]
+	# Avoid having to specify remote when pushing a new branch
+	autoSetupRemote = true
+	# Push tags when pushing branches
+	followTags = true
+[pull]
+	rebase = false
+[fetch]
+	prune = true
+	pruneTags = true
+	all = true
+[core]
+	excludesfile = ~/dotfiles/git/.gitignore
+	editor = code --wait
+[help]
+	autocorrect = prompt
+[commit]
+	# Show diff in commit message editor. This won't be committed, it's just useful to see.
+	verbose = true
+	gpgsign = true
+[gpg]
+	format = ssh
+[gpg "ssh"]
+	# Modify this line to meet your needs.
+	# Declaring the `git` namespace helps prevent cross-protocol attacks.
+	# echo "$(git config --get user.email) namespaces=\"git\" $(cat ~/.ssh/<MY_KEY>.pub)" >> ~/.ssh/allowed_signers
+	allowedSignersFile = ~/.ssh/allowed_signers
+[include]
+	path = ~/.gitconfig.local
