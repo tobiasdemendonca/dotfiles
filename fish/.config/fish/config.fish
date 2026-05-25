@@ -36,3 +36,8 @@ set -gx NVM_DIR "$HOME/.nvm"
 set PATH "$HOME/.nvm/versions/node/v24.11.1/bin" $PATH
 set -Ux EZA_CONFIG_DIR "$HOME/.config/eza"
 set -Ux MANPAGER "batcat -l man -p"
+
+# zoxide
+if command -q zoxide
+    zoxide init fish | source
+end
