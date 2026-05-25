@@ -5,7 +5,9 @@ end
 set fish_greeting           # Supresses fish's intro msg
 
 # Start Starship for a fancy prompt
-starship init fish | source
+if command -q starship
+    starship init fish | source
+end
 
 # Yazi (browsing files)
 function y
