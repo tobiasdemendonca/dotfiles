@@ -24,3 +24,4 @@ resvg # used for yazi svg rendering, download the binary from https://github.com
 zellij # requires cargo
 zen   # tarball from their website
 kitty # install script from website and their own configure script below it
+fish  # it's an apt package but you'll need to configure the apt repo, just look at the readme: https://github.com/fish-shell/fish-shell
