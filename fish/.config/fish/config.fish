@@ -36,7 +36,12 @@ end
 # NVM (node)
 set -gx NVM_DIR "$HOME/.nvm"
 set PATH "$HOME/.nvm/versions/node/v24.11.1/bin" $PATH
-set -Ux EZA_CONFIG_DIR "$HOME/.config/eza"
+
+# eza: Omarchy themes the terminal palette, which eza's default colours follow
+if not test -d ~/.local/state/omarchy
+    set -gx EZA_CONFIG_DIR "$HOME/.config/eza/rose-pine"
+end
+
 set -Ux MANPAGER "bat -l man -p"
 
 # zoxide
