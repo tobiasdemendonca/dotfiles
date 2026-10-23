@@ -48,3 +48,6 @@ set -Ux MANPAGER "bat -l man -p"
 if command -q zoxide
     zoxide init fish | source
 end
+
+# opencode
+fish_add_path ~/.opencode/bin
